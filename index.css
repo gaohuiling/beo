@@ -1,93 +1,375 @@
-*{
-	margin:0;
+* {
+    margin: 0;
+    box-sizing: border-box;
 }
-body{
-	/*font-family:  SimHei,"黑体", Hiragino Sans GB, "冬青黑体", sans-serif;*/
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
 }
-.container{
-	width:1024px;
-	margin:0 auto;
+
+.header-box {
+    height: 100vh;
+    background: #192314;
+    overflow: hidden;
+    position: relative;
 }
-.header-box{
-	height:100vh;
-	background: #192314;
-	overflow: hidden;
-	position: relative;
+
+.header-pic-box {
+    width: 652px;
+    height: 501px;
+    background: url("green-beosound-shape-desktop.jpg");
+    background-size: 100% auto;
+    float: right;
 }
-.header-pic-box{
-	width:652px;
-	height:501px;
-	background: url("green-beosound-shape-desktop.jpg");
-	background-size: 100% auto;
-	float:right;
+
+.header-text-box {
+    width: 512px;
+    height: 208px;
+    position: absolute;
+    left: 100px;
+    top: 150px;
+    color: #fff;
+    font-size: 12px;
 }
-.header-text-box{
-	width:512px;
-	height:208px;
-	position:absolute;
-	left:100px;
-	top:150px;
-	color:#fff;
-	font-size:12px;
+
+.description {
+    line-height: 24px;
+    margin-bottom: 10px;
 }
-.description{
-	line-height: 24px;
-	margin-bottom:10px;
+
+.title {
+    font-size: 30px;
+    line-height: 39px;
+    margin-top: 15px;
+    margin-bottom: 24px;
+    /*字与字之间的距离*/
+    letter-spacing: 4px;
+    /*不加粗*/
+    font-weight: normal;
 }
-.title{
-	font-size: 30px;
-	line-height: 39px;
-	margin-top: 15px;
-	margin-bottom:24px;
-	/*字与字之间的距离*/
-	letter-spacing: 3.75px;
-	/*不加粗*/
-	font-weight: normal;
+
+.small-desc {
+    font-size: 13px;
+    line-height: 21px;
+    margin-bottom: 20px;
 }
-.small-desc{
-	font-size:13px;
-	line-height: 21px;
-	margin-bottom: 20px;
+
+.button {
+    display: block;
+    width: 282px;
+    line-height: 21px;
+    padding: 10px 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #FFF;
+    text-decoration: none;
 }
-.button{
-	display: block;
-	width:202px;
-	line-height:21px;
-	padding:10px 40px;
-	background-color: rgba(255,255,255,0.1);
-	color:#FFF;
-	text-decoration: none; 
+
+.banner-box {
+    height: 405px;
+    padding-bottom: 100px;
+    background: url("img-bg-1350.jpg") 0 -158px / 100% auto;
 }
-.banner-box{
-	height:305px;
-	padding-bottom: 100px;
-	background: url("img-bg-1350.jpg");
-	background-size:100% auto;
-	background-position:0 -158px; 
+
+.product-box {
+    width: 705px;
+    height: 353px;
+    margin: -48px auto 0 auto;
+    z-index: 100;
 }
-.product-box{
-	width:705px;
-	height:353px;
-	margin:0 auto;
-	margin-top:-48px;
-	position:relative;
-	z-index: 100;
+
+.product-item {
+    float: left;
+    width: 235px;
+    height: 353px;
+    position: relative;
 }
-.product-item{
-	float:left;
-	width:235px;
-	height:353px;
-	position:relative;
+
+.product-item img {
+    width: 100%;
 }
-.product-item img{
-	width:100%;
+
+.product-item h4 {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
 }
-.product-item h4{
-	position:absolute;
-	top:15px;
-	left:20px;
-	color: #fff;
-	font-size: 18px;
-	font-weight: 500px;
-	line-height:24px;
+
+.top-menu {
+    height: 57px;
+    position: absolute;
+    padding: 0 22px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.top-menu .left {
+    height: 100%;
+    width: 128px;
+    line-height: 57px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    background: url("product.png") no-repeat left center;
+}
+
+.center {
+    height: 100%;
+    width: 190px;
+    line-height: 57px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.top-menu .right {
+    height: 100%;
+    width: 128px;
+    line-height: 57px;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    background: url("menu.png") no-repeat right center;
+}
+
+.title-box {
+    text-align: center;
+    padding-top: 90px;
+    height: 318px;
+}
+
+.title-box h6 {
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 13px;
+    margin: 12px 0 18px 0;
+}
+
+.title-box h2 {
+    font-size: 50px;
+    font-weight: normal;
+    letter-spacing: 4px;
+    line-height: 60px;
+    margin: 25px 0 40px 0;
+}
+
+.product-list {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 512px;
+    height: 512px;
+    position: relative;
+}
+
+.product h4 {
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 2px;
+}
+
+.product:nth-child(1) {
+    background: url("beosound-shape-mobile.jpg");
+    background-size: 100% auto;
+}
+
+.product:nth-child(2) {
+    background: url("beovision-eclipse-mobile.jpg");
+    background-size: 100% auto;
+}
+
+.product:nth-child(3) {
+    background: url("beolab-50-mobile.jpg");
+    background-size: 100% auto;
+}
+
+.product:nth-child(4) {
+    background: url("beoplay-p6-8 (1).jpg");
+    background-size: 100% auto;
+}
+
+.product:nth-child(5) {
+    background: url("beosound-core-mobile.jpg");
+    background-size: 100% auto;
+}
+
+.product:nth-child(6) {
+    background: url("beoplay-h9i-mobile.jpg");
+    background-size: 100% auto;
+}
+
+.story-list {
+    width: 705px;
+    height: 490px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.story {
+    width: 176px;
+    height: 100%;
+}
+
+.story:nth-child(3) {
+    width: 353px;
+}
+
+.story img {
+    width: 100%;
+}
+
+.story h5 {
+    margin: 30px 0 18px 0;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+.story .desc {
+    padding-right: 9px;
+    font-size: 13px;
+    line-height: 12px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.info-box {
+    padding: 0 14px;
+    height: 509px;
+    border-top: 1px solid #f2f2f2;
+    display: flex;
+}
+
+.info-item {
+    text-align: center;
+    width: 498px;
+    height: 100%;
+    padding-top: 80px;
+}
+
+.info-item:nth-child(1) {
+    border-right: 1px solid #f2f2f2;
+}
+
+.info-item .icon {
+    width: 54px;
+    height: 54px;
+    margin: 0 auto 30px auto;
+    border-radius: 50%;
+}
+
+.info-item:nth-child(1) .icon {
+    background: #000 url("new.png") no-repeat center center;
+}
+
+.info-item:nth-child(2) .icon {
+    background: #000 url("location.png") no-repeat center center;
+}
+
+.info-item h5 {
+    margin-bottom: 12px;
+    line-height: 17px;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.info-item h6 {
+    width: 290px;
+    margin: 18px auto;
+    line-height: 20px;
+    font-weight: normal;
+    font-size: 13px;
+    color: #888;
+}
+
+.info-item .button {
+    color: #000;
+    width: 200px;
+    height: 41px;
+    margin: 8px auto;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.info-item .search {
+    margin-top: 116px;
+}
+
+.info-item input {
+    display: block;
+    width: 372px;
+    height: 56px;
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 17px;
+    margin: 12px auto 40px auto;
+    border: 1px solid #cccccc;
+    outline: none;
+}
+
+.info-item .location-desc {
+    width: 290px;
+    margin: 28px auto;
+}
+
+.footer {
+    height: 82px;
+    padding: 20px 14px;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .left {
+    padding-left: 25px;
+    width: 350px;
+    line-height: 20px;
+    height: 20px;
+    font-size: 12px;
+    letter-spacing: 3px;
+    background: url(language.png) no-repeat left 3px;
+}
+
+.footer .left a {
+    color: #000;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer .right {
+    width: 629px;
+    height: 42px;
+    padding: 0 14px;
+}
+
+.footer .right a {
+    line-height: 16px;
+    display: block;
+    margin-left: 16px;
+    height: 15px;
+    float: right;
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
 }
